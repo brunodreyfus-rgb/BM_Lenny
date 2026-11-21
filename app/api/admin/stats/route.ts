@@ -1,0 +1,2 @@
+import {admin,db,response} from '@/lib/server';
+export async function GET(req:Request){if(!await admin(req))return response({error:'Accès refusé.'},403);const d=db();const [f,g,r]=await Promise.all([d.from('lenny_families').select('*'),d.from('lenny_guests').select('*'),d.from('lenny_rsvps').select('*')]);if(f.error||g.error||r.error)return response({error:'Erreur base.'},500);return response({families:f.data,guests:g.data,rsvps:r.data});}

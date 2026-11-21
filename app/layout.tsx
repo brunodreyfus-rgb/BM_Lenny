@@ -1,0 +1,1 @@
+import './style.css';export const metadata={title:'Lenny · Bar Mitsvah 2027',description:'Une célébration en famille à Ra’anana'};export default function Layout({children}:{children:React.ReactNode}){return <html lang="fr"><body>{children}</body></html>}
