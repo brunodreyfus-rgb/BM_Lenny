@@ -31,3 +31,5 @@ html{overflow-x:hidden;-webkit-text-size-adjust:100%}body{min-width:0}main{min-w
 .familyTeaser { margin: 24px auto 18px; padding: 16px 20px; border: 1px solid rgba(185,148,75,.5); border-radius: 14px; text-align: center; background: rgba(185,148,75,.08); }
 .familyTeaser a { color: inherit; font-weight: 750; text-decoration: none; }
 .familyPrivate { scroll-margin-top: 24px; }
+
+.treePortrait{width:100%;max-width:190px;height:125px;object-fit:cover;border-radius:12px;margin:9px auto;display:block}.treeChildren{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:14px}.treeChild{display:flex;align-items:center;flex-direction:column;gap:5px;font-size:13px}.treeChildAvatar{display:block;width:66px;height:66px;overflow:hidden;border-radius:50%;border:2px solid #b99b58}.treeChildAvatar img{width:100%;height:100%;object-fit:cover}.treeBranches{align-items:stretch}

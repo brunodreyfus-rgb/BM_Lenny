@@ -1,0 +1,1 @@
+V6: captions remapped to actual numbered photo files, family tree photo cards and children. Two uncertain photo identifications use generic captions. Individual portraits use family photos as placeholders until approved crops are supplied. Gallery remains private behind authentication.
