@@ -1,0 +1,1 @@
+V10: Removed all public event atmosphere cards from homepage. Schedule navigation is visible only after identification. Individual event details and RSVP remain private by family formula. Admin route: /admin.
