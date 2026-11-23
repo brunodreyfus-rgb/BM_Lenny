@@ -82,3 +82,9 @@ html{overflow-x:hidden;-webkit-text-size-adjust:100%}body{min-width:0}main{min-w
 .homeMomentGrid img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;border-radius:12px;margin:12px 0}
 .homeMoments{max-width:1100px;margin:70px auto;padding:24px 12px}
 @media(max-width:760px){.v9Hero{display:flex;flex-direction:column}.v9InviteFrame{padding:12px}.v9InviteFrame img{width:100%;height:auto;max-height:none}.homeMomentGrid{grid-template-columns:1fr}.v13Watermark{opacity:.16}.v13Ceremony span{padding:7px 9px}}
+
+/* V14: cinematic montage and uncropped home photography */
+.v14Atmosphere{width:min(100%,650px);margin:20px auto 6px;overflow:hidden;border:1px solid rgba(201,170,111,.55);border-radius:15px;box-shadow:0 15px 40px rgba(0,0,0,.24)}
+.v14Atmosphere img{display:block;width:100%;height:auto;object-fit:contain}
+.homeMomentGrid article img{display:block;width:100%;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important;object-position:center!important}
+@media(max-width:760px){.v14Atmosphere{margin:14px auto}}
