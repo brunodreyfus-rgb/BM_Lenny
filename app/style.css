@@ -33,3 +33,31 @@ html{overflow-x:hidden;-webkit-text-size-adjust:100%}body{min-width:0}main{min-w
 .familyPrivate { scroll-margin-top: 24px; }
 
 .treePortrait{width:100%;max-width:190px;height:125px;object-fit:cover;border-radius:12px;margin:9px auto;display:block}.treeChildren{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:14px}.treeChild{display:flex;align-items:center;flex-direction:column;gap:5px;font-size:13px}.treeChildAvatar{display:block;width:66px;height:66px;overflow:hidden;border-radius:50%;border:2px solid #b99b58}.treeChildAvatar img{width:100%;height:100%;object-fit:cover}.treeBranches{align-items:stretch}
+
+/* V8: one joined family tree, family photo cards */
+.v8Tree{margin-top:18px;padding:22px 16px 28px;border:1px solid rgba(201,168,99,.4);border-radius:24px;background:linear-gradient(160deg,#122840,#081728);color:#f9f4e8}
+.v8TreeIntro,.v8TreeFoot{text-align:center;opacity:.85;font-size:14px;margin:4px auto 24px}
+.v8TreeFoot{margin:24px auto 0;font-size:12px}
+.v8Families{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start}
+.v8Side{min-width:0;border:1px solid rgba(199,165,98,.32);border-radius:20px;padding:18px 10px;background:rgba(255,255,255,.035)}
+.v8Side h3{text-align:center;font-size:21px;color:#f0d18b;margin:0 0 18px}
+.v8Ancestors,.v8SideBranches,.v8Kids{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:12px}
+.v8SideBranches{align-items:stretch}
+.v8Branch{display:flex;flex-direction:column;align-items:center;gap:0;flex:1 1 160px;max-width:230px;min-width:0}
+.v8Person{width:100%;min-width:0;max-width:230px;padding:12px 9px;border-radius:15px;border:1px solid rgba(203,168,100,.48);background:#1b324d;display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center}
+.v8Person img{width:100%;height:135px;object-fit:cover;border-radius:10px;display:block}
+.v8Person strong{color:#f3d995;font-size:14px;line-height:1.35}
+.v8Person span{font-size:12px;line-height:1.4;color:#e5d8c0}
+.v8Ancestors .v8Person{max-width:195px}
+.v8Stem{height:26px;width:2px;background:#c6a363;margin:0 auto;flex-shrink:0}
+.v8Kids{width:100%;flex-wrap:nowrap;gap:8px}
+.v8Kids .v8Person{flex:1;max-width:110px;padding:7px 5px}
+.v8Kids .v8Person img{height:100px}
+.v8Join{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;color:#f1d18c;margin:22px auto 14px;font-size:15px;font-weight:600}
+.v8Join span:first-child{font-size:28px}
+.v8Center{display:flex;flex-direction:column;align-items:center}
+.v8Center .v8Person{max-width:320px}
+.v8Center .v8Person img{height:185px}
+.v8Highlight{border:2px solid #d5ae5f;box-shadow:0 0 22px rgba(208,162,78,.15);background:#263a52}
+@media(max-width:800px){.v8Families{grid-template-columns:1fr;gap:18px}.v8SideBranches{gap:10px}.v8Branch{max-width:260px}.v8Tree{padding:16px 10px}.v8Side{padding:14px 8px}}
+@media(max-width:430px){.v8SideBranches{flex-direction:column;align-items:center}.v8Branch{width:100%;max-width:270px}.v8Ancestors .v8Person{width:calc(50% - 8px)}.v8Ancestors .v8Person img{height:105px}}
