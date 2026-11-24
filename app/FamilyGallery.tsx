@@ -6,11 +6,11 @@ const photos=[{"file": "01.jpg", "caption": "La famille de Lenny avec Nany & Dad
 const photo=(name:string)=>`/api/gallery/${name}`;
 type FamilyCard={name:string;image:string;children?:string;childImage?:string;note?:string};
 const mani:FamilyCard[]=[
- {name:'Jérémie (Jéjé) & Magalie',image:'jeje-mag.jpg',children:'Matteo · Maya · Emma',childImage:'mani-kids.jpg'},
- {name:'Mélanie (Didi) & Micha',image:'didi-micha.jpg',children:'Elsa · Eva · Alon',childImage:'cohen-kids.jpg'},
- {name:'Lorelie (Lolo) & Julien',image:'11.jpg',children:'Jonah · Ella',note:'Les Touati'},
+ {name:'Tonton Jéjé & Tata Mag',image:'jeje-mag.jpg',children:'Matteo · Maya · Emma',childImage:'mani-kids.jpg'},
+ {name:'Tata Didi & Tonton Micka',image:'didi-micha.jpg',children:'Elsa · Eva · Alon',childImage:'cohen-kids.jpg'},
+ {name:'Tata Lolo & Tonton Juju',image:'11.jpg',children:'Jonah · Ella',note:'Les Touati'},
 ];
-const dreyfus:FamilyCard[]=[{name:'André (Dédé) & Mag',image:'dede-mag.jpg',children:'Tal',childImage:'tal.jpg'}];
+const dreyfus:FamilyCard[]=[{name:'Tonton Dédé & Tata Mag',image:'dede-mag.jpg',children:'Tal',childImage:'tal.jpg'}];
 function Portrait({name,image,note,highlight=false}:{name:string,image:string,note?:string,highlight?:boolean}){
  return <div className={'v8Person'+(highlight?' v8Highlight':'')}><PrivateImage src={photo(image)} alt={name} loading="lazy"/><strong>{name}</strong>{note&&<span>{note}</span>}</div>;
 }

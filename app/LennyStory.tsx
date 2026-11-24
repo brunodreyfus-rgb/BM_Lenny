@@ -14,6 +14,7 @@ const scenes=[
  {n:4,fr:'Premier jour, nouveaux copains',en:'New school, new friends',he:'בית ספר חדש וחברים חדשים',detail:'Lenny découvre son école israélienne et ses nouveaux amis.',tag:'ÉCOLE',bubble:'C’est parti !'},
  {n:5,fr:'Chabbat, dès le plus jeune âge',en:'Shabbat from an early age',he:'שבת מילדות',detail:'Les hallot et les traditions qui nous accompagnent depuis toujours.',tag:'CHABBAT',bubble:'Chabbat Chalom !'},
  {n:6,fr:'Hanoucca en famille',en:'Hanukkah with the family',he:'חנוכה עם המשפחה',detail:'Les bougies, les chants et les souvenirs lumineux.',tag:'HANOUCCA',bubble:'Encore une bougie !'},
+ {n:21,fr:'Hanoucca avec Papou',en:'Hanukkah with Grandpa',he:'חנוכה עם פפו',detail:'Les traditions se transmettent de génération en génération, autour de Papou.',tag:'HANOUCCA',bubble:'Hag Sameah !',src:'/story/hanoucca-papou.jpg'},
  {n:9,fr:'Autour de la table',en:'Around the family table',he:'סביב השולחן המשפחתי',detail:'Des fêtes, des repas et surtout des moments partagés.',tag:'TRADITIONS',bubble:'À table !'},
  {n:10,fr:'Un petit prince plein d’énergie',en:'A little prince full of energy',he:'נסיך קטן ומלא אנרגיה',detail:'Lenny grandit avec son humour et sa personnalité.',tag:'LENNY',bubble:'À l’aventure !'},
  {n:11,fr:'Un cœur immense',en:'A heart full of love',he:'לב ענק',detail:'Déjà petit, Lenny sait montrer combien il aime sa famille.',tag:'AMOUR',bubble:'Je vous aime !'},
@@ -24,6 +25,7 @@ const scenes=[
  {n:16,fr:'Les cousins, la soucca et les fous rires',en:'Cousins and laughter in the sukkah',he:'בני דודים וצחוק בסוכה',detail:'Des nuits et des souvenirs qui resteront longtemps.',tag:'SOUCCOT',bubble:'Encore cinq minutes !'},
  {n:18,fr:'Une famille qui grandit',en:'A growing family',he:'משפחה שגדלה',detail:'Les fêtes et les repas en famille deviennent des traditions précieuses.',tag:'FAMILLE',bubble:'Tous réunis !'},
  {n:15,fr:'Découvrir, voyager, grandir',en:'Exploring, traveling, growing',he:'לגלות, לטייל ולגדול',detail:'Israël est aussi une terre de découvertes et d’aventures.',tag:'AVENTURES',bubble:'On explore !'},
+ {n:22,fr:'Les scouts et Tonton Dédé',en:'Scouts and Uncle Dédé',he:'הצופים ודוד דדה',detail:'En uniforme des scouts, Lenny partage une partie de Pokémon avec Tonton Dédé.',tag:'TSOFIM',bubble:'À toi de jouer !',src:'/story/scouts-dede.jpg'},
  {n:1,fr:'Les grandes fêtes de famille',en:'Big family celebrations',he:'חגיגות משפחתיות',detail:'Les générations réunies autour des fêtes et de la transmission.',tag:'TRANSMISSION',bubble:'Quelle tablée !'},
 
 ];
