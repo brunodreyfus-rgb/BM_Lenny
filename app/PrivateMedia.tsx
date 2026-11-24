@@ -1,0 +1,5 @@
+'use client';
+import {createContext,useContext,useEffect,useState,type ReactNode,type ImgHTMLAttributes} from 'react';
+const MediaContext=createContext('');
+export function PrivateMediaProvider({token,children}:{token:string;children:ReactNode}){return <MediaContext.Provider value={token}>{children}</MediaContext.Provider>}
+export function PrivateImage({src,...props}:ImgHTMLAttributes<HTMLImageElement>){const token=useContext(MediaContext);const [url,setUrl]=useState('');useEffect(()=>{setUrl('');if(!token||typeof src!=='string'||!src.startsWith('/api/gallery/'))return;const controller=new AbortController();let objectUrl='';fetch(src,{headers:{Authorization:`Bearer ${token}`},cache:'no-store',signal:controller.signal}).then(r=>{if(!r.ok)throw Error();return r.blob()}).then(blob=>{if(controller.signal.aborted)return;objectUrl=URL.createObjectURL(blob);setUrl(objectUrl)}).catch(()=>{});return()=>{controller.abort();if(objectUrl)URL.revokeObjectURL(objectUrl)}},[src,token]);return url?<img {...props} src={url}/>:null;}
