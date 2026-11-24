@@ -1,0 +1,1 @@
+V16 : copier les fichiers du ZIP dans les dossiers correspondants du depot. Supprimer le dossier public/story (anciens fichiers accessibles publiquement). Les nouvelles images sont servies via /api/gallery apres identification. Les planches fournies sont en francais. Aucun changement Supabase.
